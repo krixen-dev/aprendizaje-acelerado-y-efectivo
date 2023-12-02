@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metodo map</title>
+</head>
+
+<body>
+    <section>
+        <article>
+            <h2>
+                Método Map
+            </h2>
+            <p>
+                En JavaScript, el método map() se usa en arreglos para aplicar una función a cada elemento y crear un
+                nuevo arreglo con los resultados. Importante: este método no cambia el arreglo original, simplemente
+                devuelve uno nuevo con los resultados de aplicar la función a cada elemento.
+            </p>
+            <p>
+                La sintaxis básica del método map() es la siguiente:<br>
+                <b>
+                    var nuevoArreglo = arregloOriginal.map(function(elementoActual, indice, arregloCompleto) {<br>
+                    // Código para procesar cada elemento del arreglo <br>
+                    // Devolver el resultado de la operación<br>
+
+                    });
+                </b>
+            </p>
+            <ul>
+                <li><b>elementoActual</b>: El valor del elemento actual que está siendo procesado en el arreglo.
+                </li>
+                <li><b>índice:</b> El índice del elemento actual en el arreglo.</li>
+                <li><b>arregloCompleto:</b> El arreglo original que está siendo mapeado.</li>
+            </ul>
+        </article>
+        <article>
+            <h2>
+                Ejemplo 1
+            </h2>
+            <p>
+                <i>
+                    -multiplicar todos los números de la siguiente lista:
+                <br>
+                numeros = [1, 2, 3, 4, 5]
+            </p>
+            <p class="resultado"></p>
+            <button type="button" class="boton-ver-resultados">ver resultado</button>
+
+            <h2>
+                Ejemplo 2
+            </h2>
+            <p>
+                <i>
+                    -convertir todas las palabras de la siguiente lista a mayúsculas:
+                <br>
+                palabras = ["holA", "munDo", "como", "estAn"]
+            </p>
+            <p class="resultado2"></p>
+            <button type="button" class="boton-ver-resultados2">ver resultado</button>
+        </article>
+    </section>
+
+    <script src="metodo-map.js"></script>
+</body>
+
+</html>
