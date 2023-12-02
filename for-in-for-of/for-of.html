@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of</title>
+</head>
+<body>
+    <section>
+        <article>
+            <h2>for of</h2>
+            <p>
+                for of simplifica la iteración sobre estructuras de datos iterables, como arrays, cadenas, mapas, conjuntos, etc.
+            </p>
+
+            <p>
+                La sintaxis básica de for...of es la siguiente: <br> <br>
+                <hr>
+                <b>for</b> (variable <b>of</b> iterable) { <br>
+                    // código a ejecutar en cada iteración <br>
+                  } <br> <br>
+                <hr>
+                  Aquí, <b>variable</b> es una variable que tomará el valor de cada elemento en <b>iterable</b> en cada iteración del bucle. iterable es la estructura de datos que se está recorriendo.
+            </p>
+        </article>
+        <article>
+            <h2>Ejemplo 1</h2>
+            <p>
+                let numeros = [1, 2, 3, 4, 5];
+            </p>
+            <p class="mostrar-resultado1">
+
+            </p>
+            <button type="button" class="boton-mostrar-resultado1">mostrar resultado</button>
+        </article>
+        <article>
+            <h2>for of también se puede utilizar para iterar Strings</h2>
+            <p>
+                mensaje = "hola mundo";
+            </p>
+            <p class="mostrar-resultado2"></p>
+            <button type="button" class="boton-mostrar-resultado2">mostrar resultado</button>
+
+            <h3>
+                <li>for of funciona con cualquier iterable como arrays, mapas, cadenas, etc..</li>
+                <li>No está diseñada para trabajar con objetos normales (plain objects)</li>
+            </h3>
+        </article>
+    </section>
+
+    <script src="src/for-of.js"></script>
+</body>
+</html>
