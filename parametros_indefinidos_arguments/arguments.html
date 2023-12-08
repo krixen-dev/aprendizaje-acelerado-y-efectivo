@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <article>
+            <h2>Parámetros indefinídos</h2>
+            <p>
+                En JavaScript, es posible definir funciones que acepten un número variable de parámetros, incluso cuando
+                no se especifica la cantidad exacta de argumentos que se pasarán. Esto se logra utilizando el objeto
+                especial arguments o mediante el uso del operador de propagación (...).
+            </p>
+            <p>
+                <hr>
+                function suma() { <br>
+                let resultado = 0; <br>
+                <br>
+                for (let i = 0; i < <b>arguments</b>.length; i++) { <br>
+                    resultado += arguments[i]; <br>
+                    } <br>
+                    <br>
+                    return resultado; <br>
+                    } <br>
+                    <br>
+                    console.log(suma(2, 3, 5, 8)); // Output: 18
+
+                    <hr>
+
+                    En este ejemplo, la función <b>suma</b> acepta cualquier cantidad de argumentos y los suma
+                    utilizando el objeto <b>arguments</b>.
+            </p>
+        </article>
+        <article>
+            <h2>Utilizando el operador de propagación (...):</h2>
+            <p>
+                A partir de ECMAScript 6 (ES6), puedes utilizar el operador de propagación (...) para recoger los
+                argumentos en un array.
+                <hr>
+                function suma(...numeros) { <br>
+                return numeros.reduce((total, num) => total + num, 0); <br>
+                } <br>
+
+                console.log(suma(2, 3, 5, 8)); // Output: 18
+                <hr>
+                En este caso, la función suma acepta cualquier cantidad de argumentos y los recoge en el array numeros
+                utilizando el operador de propagación.
+
+                Ambos enfoques te permiten trabajar con un número variable de parámetros. Sin embargo, el uso del
+                operador de propagación es más moderno y generalmente preferido debido a su sintaxis más clara y a que
+                arguments tiene algunas limitaciones y no es un array real.
+
+                Es importante destacar que, si bien estas técnicas permiten trabajar con un número variable de
+                parámetros, es recomendable documentar claramente cómo deben usarse tus funciones para que los usuarios
+                comprendan qué argumentos son opcionales o necesarios.
+            </p>
+        </article>
+    </section>
+    <script src="arguments.js"></script>
+</body>
+
+</html>
